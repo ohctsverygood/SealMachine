@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">自动封条机集卡端</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="scan_fragment_name">扫二维码</string>
+    <string name="customer_phone">0757-888-6666</string>
+    <string name="version">1.0</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dip"
+        android:paddingRight="22dip"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/group_login_username"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingRight="10dip"
+            android:text="车牌号"
+            />
+            <EditText
+                android:id="@+id/login_etcarnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@null"
+                android:hint="请输入车牌号码"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:background="@drawable/group_login_username"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingRight="10dip"
+                android:text="手机号"
+                />
+            <EditText
+                android:id="@+id/login_etphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@null"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:hint="请输入手机号码"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/login_etcode"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="16dip"
+                android:background="@drawable/group_request_message"
+                android:layout_marginRight="16dip"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:hint="请输入验证码"
+                />
+
+            <Button
+                android:id="@+id/login_btsendmes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:paddingRight="10dip"
+                android:paddingLeft="10dip"
+                android:background="@drawable/bt_sendmessage_bg"
+                android:textColor="#737473"
+                android:text="发送验证码"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="26dip"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/bt_login_bg"
+            android:text="登录"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="5dip"
+        android:layout_above="@+id/l_customer"
+        >
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="软件版本:"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/version"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/l_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="客服电话："
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/customer_phone"
+            />
+    </LinearLayout>
+
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#6a768e"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="#000000"
+        android:keyTextSize="16sp"
+        android:textAlignment="gravity"
+        android:paddingBottom="8dp"
+        android:shadowRadius="0"
+        android:paddingTop="8dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="sealinfo_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#363636</item>
+
+    </style>
+
+    <style name="sealinfo_title" parent="sealinfo_text">
+        <item name="android:paddingRight">20dip</item>
+    </style>
+
+    <style name="sealinfo_content" parent="sealinfo_text">
+        <item name="android:gravity">right</item>
+        <item name="android:lines">2</item>
+    </style>
+
+</resources>
