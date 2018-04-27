@@ -74,8 +74,9 @@ public class ScanFragment extends BaseFragment{
 
     @Override
     public void onResume() {
-        if(getUserVisibleHint())
+        if(getUserVisibleHint()) {
             codeView.resume();
+        }
         super.onResume();
     }
 

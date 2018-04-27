@@ -24,13 +24,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"
+            >
         </activity>
 
-        <activity android:name=".ui.SealMessageActivity">
+        <activity android:name=".ui.SealMessageActivity"
+            android:launchMode="singleTask"
+            >
         </activity>
 
-        <activity android:name=".ui.SealBindActivity">
+        <activity android:name=".ui.SealBindActivity"
+            android:launchMode="singleTask"
+            >
         </activity>
 
     </application>
